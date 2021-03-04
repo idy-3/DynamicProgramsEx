@@ -1,9 +1,9 @@
--------------------------------------------------------------
-Dynamic programming
----------------------
-memoization
+# -------------------------------------------------------------
+# Dynamic programming
+# ---------------------
+# memoization
 
-fibonacci
+# fibonacci
 
 
 def fib(n):
@@ -99,8 +99,8 @@ print(canSum(8, [2, 3, 5]))  # True
 # print(canSum(300, [7, 14])) # False
 
 
-memoized version
------------------
+# memoized version
+# -----------------
 
 
 def canSum(targetSum, numbers, memo=None):
@@ -128,7 +128,7 @@ print(canSum(7, [2, 4]))  # False
 print(canSum(8, [2, 3, 5]))  # True
 # print(canSum(300, [7, 14])) # False
 
----------------------------------------
+# ---------------------------------------
 
 
 def howSum(targetSum, numbers):
@@ -152,8 +152,8 @@ print(howSum(7, [2, 4]))  # None
 print(howSum(8, [2, 3, 5]))  # [2, 2, 2, 2]
 # print(howSum(300, [7, 14])) # None
 
-memoized version
------------------
+# memoized version
+# -----------------
 
 
 def howSum(targetSum, numbers, memo=None):
@@ -184,7 +184,7 @@ print(howSum(8, [2, 3, 5]))  # [2, 2, 2, 2]
 print(howSum(300, [7, 14]))  # None
 
 
---------------------
+# --------------------
 
 
 def bestSum(targetSum, numbers):
@@ -212,8 +212,8 @@ print(bestSum(7, [5, 3, 4, 7]))  # [7]
 print(bestSum(7, [2, 4]))  # None
 # print(bestSum(300, [7, 14])) # None
 
-memoized version
------------------
+# memoized version
+# -----------------
 
 
 def bestSum(targetSum, numbers, memo=None):
@@ -255,7 +255,7 @@ print(bestSum(100, [1, 2, 5, 25]))  # [25, 25, 25, 25]
 print(bestSum(300, [7, 14]))  # None
 
 
---------------------------------------------
+# --------------------------------------------
 
 
 def canConstruct(target, wordBank):
@@ -279,8 +279,8 @@ print(canConstruct("enterapotentpot", [
 #     "e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))  # False
 
 
-memoized version
------------------
+# memoized version
+# -----------------
 
 
 def canConstruct(target, wordBank, memo=None):
@@ -310,7 +310,7 @@ print(canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
     "e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))  # False
 
 
---------------------------
+# --------------------------
 
 
 def countConstruct(target, wordBank):
@@ -336,8 +336,8 @@ print(countConstruct("enterapotentpot", [
 #     "e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))  # 0
 
 
-memoized version
------------------
+# memoized version
+# -----------------
 
 
 def countConstruct(target, wordBank, memo=None):
@@ -367,7 +367,7 @@ print(countConstruct("enterapotentpot", [
 print(countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
     "e", "ee", "eee", "eeee", "eeeee", "eeeeee"]))  # 0
 
---------------------------------------------------
+# --------------------------------------------------
 
 
 def allConstruct(target, wordBank):
@@ -417,8 +417,8 @@ print(allConstruct("aaaaaaaaaaaaaaaaaaaaaaaaaaaaz",
 # []
 
 
-memoized version
------------------
+# memoized version
+# -----------------
 
 
 def allConstruct(target, wordBank, memo=None):
@@ -472,9 +472,9 @@ print(allConstruct("aaaaaaaaaaaaaaaaaaaaaaaaaaaaz",
                    ["a", "aa", "aaa", "aaaa", "aaaaa"]))
 # []
 
-------------------------------------
-Tabulation
-fibonacci
+# ------------------------------------
+# Tabulation
+# fibonacci
 
 
 def fib(n):
@@ -491,8 +491,8 @@ print(fib(7))
 print(fib(8))
 print(fib(50))
 
------------------
-Gridtraveler tablutation
+# -----------------
+# Gridtraveler tablutation
 [[0]*(6+2) for x in range(6+2)]
 
 
@@ -517,7 +517,7 @@ print(gridTraveler(3, 2))  # 3
 print(gridTraveler(3, 3))  # 6
 print(gridTraveler(18, 18))  # 2333606220
 
-----------------------
+# ----------------------
 
 
 def canSum(targetSum, numbers):
@@ -539,7 +539,7 @@ print(canSum(8, [2, 3, 5]))  # true
 print(canSum(300, [7, 14]))  # false
 
 
---------------------------------------------
+# --------------------------------------------
 
 
 def howSum(targetSum, numbers):
@@ -561,7 +561,7 @@ print(howSum(8, [2, 3, 5]))  # [2,2,2,2]
 print(howSum(300, [7, 14]))  # null
 
 
-----------------------------------
+# ----------------------------------
 
 
 def bestSum(targetSum, numbers):
@@ -584,7 +584,7 @@ print(bestSum(8, [2, 3, 5]))  # [3, 5]
 print(bestSum(8, [1, 4, 5]))  # [4,4]
 print(bestSum(100, [1, 2, 5, 25]))  # [25,25,25,25]
 
------------------------------------------
+# -----------------------------------------
 
 
 def canConstruct(target, wordBank):
@@ -610,7 +610,7 @@ print(canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeef",
                    ["e", "ee", "eee", "eeee", "eeeee"]))
 
 
-------------------------------------
+# ------------------------------------
 
 
 def countConstruct(target, wordBank):
@@ -634,7 +634,7 @@ print(countConstruct("enterapotentpot", [
 print(countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeef",
                      ["e", "ee", "eee", "eeee", "eeeee"]))  # 0
 
-----------------------------------------
+# ----------------------------------------
 
 
 def allConstruct(target, wordBank):
